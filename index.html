@@ -14,13 +14,14 @@
       <h2 class="logo">Hanney</h2>
 
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#education">Education</a></li>
-      </ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#skills">Skills</a></li>
+  <li><a href="#projects">My Work</a></li>
+  <li><a href="#approach">My Approach</a></li>
+  <li><a href="#education">Education</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
     </nav>
   </header>
 
@@ -28,17 +29,16 @@
     <div class="hero-text">
       <p class="welcome">WELCOME TO MY PORTFOLIO</p>
 
-      <h1>Hello, I'm Haneefah.</h1>
+      <h1>Hi, I'm Haneefah.</h1>
 
-      <h2>Aspiring Web Developer & Data Scientist</h2>
+       <h2>Aspiring Web Developer | Data Science Student | Graphic Design Learner</h2>
 
-      <p>
-        I enjoy building websites, exploring data
-        and using technology to solve problems.
-      </p>
-
-      <a href="#projects" class="btn">View My Projects</a>
-      <a href="#contact" class="btn secondary">Contact Me</a>
+        <p>
+            I enjoy building websites, exploring data, and creating clear visual designs.
+            I’m learning by making practical projects and sharing what I build.
+        </p>
+      <a href="#projects" class="btn">View My Projects</a> 
+       <a href="#contact" class="btn secondary">Contact Me</a>
     </div>
 
     <div class="hero-image">
@@ -70,12 +70,12 @@
         in technology and use my knowledge to create
         meaningful projects.
       </p>
-      
-     <p>
-      I am also interested in graphic design and enjoy learning
-      how to create clear, eye-catching visuals.
-    </p>
-      
+
+      <p>
+         I am also interested in graphic design and enjoy learning
+          how to create clear, eye-catching visuals.
+       </p>
+
     </div>
 
   </div>
@@ -109,11 +109,6 @@
       <p>Data Analysis</p>
     </div>
 
-    <div class="skill-card">
-  <h3>Graphic Design</h3>
-  <p>Creating clear, eye-catching visuals</p>
-</div>
-    
   </div>
 </section>
 
@@ -125,30 +120,24 @@
   <p class="project-intro">
     Here are some of the projects I am working on.
   </p>
-
+     <div class="project-filters">
+     <button type="button" data-filter="all">All</button>
+     <button type="button" data-filter="web">Web Development</button>
+     <button type="button" data-filter="design">Graphic Design</button>
+     <button type="button" data-filter="data">Data Science</button>
+  </div>
   <div class="projects-container">
-
-    <div class="project-card">
-      <h3>Personal Portfolio</h3>
-      <p>
-        A personal website designed to showcase
-        my skills, education and projects.
-      </p>
-      <span>HTML | CSS | JavaScript</span>
-      <a href="#" class="project-btn">View Project</a>
+    <div class="project-card" data-category="web">
+    <h3>Web Development</h3>
+     <p>
+        A collection of websites and web projects I have created
+        while learning HTML, CSS, and JavaScript.
+     </p>
+       <span>HTML | CSS | JavaScript</span>
+       <a href="#" class="project-btn">View Project</a>
     </div>
 
-    <div class="project-card">
-      <h3>JavaScript Calculator</h3>
-      <p>
-        A simple calculator that performs
-        basic mathematical operations.
-      </p>
-      <span>JavaScript | HTML | CSS</span>
-      <a href="#" class="project-btn">View Project</a>
-    </div>
-
-    <div class="project-card">
+    <div class="project-card" data-category="data">
       <h3>Data Analysis Project</h3>
       <p>
         Exploring and analysing data to
@@ -158,20 +147,39 @@
       <a href="#" class="project-btn">View Project</a>
     </div>
 
-   <div class="project-card">
-  <h3>Graphic Design</h3>
-  <!-- <img src="images/HaneeyTech.png" alt="Graphic design by Haneey"> -->
-  <p>
-    A collection of visual designs created to communicate
-    ideas clearly and attractively.
-  </p>
-  <span>Graphic Design | Visual Communication</span>
-     <a href="#" class="project-btn">View Project</a>
+   <div class="project-card" data-category="design">
+      <h3>Graphic Design</h3>
+     <p>
+       A collection of visual designs created to communicate
+       ideas clearly and attractively.
+      </p>
+      <span>Graphic Design | Visual Communication</span>
+      <a href="graphic-projects.html" class="project-btn">View Projects</a>
 </div>
-    
   </div>
 </section>
 
+<section id="approach">
+  <h2>My Approach</h2>
+  <p>I learn by building, practising, and improving each project.</p>
+
+  <div class="approach-container">
+    <div class="approach-card">
+      <h3>Curiosity</h3>
+      <p>I enjoy exploring new ideas and learning new tools.</p>
+    </div>
+
+    <div class="approach-card">
+      <h3>Attention to Detail</h3>
+      <p>I take care to make my work clear and well organised.</p>
+    </div>
+
+    <div class="approach-card">
+      <h3>Continuous Learning</h3>
+      <p>I use each project as a chance to practise and improve.</p>
+    </div>
+  </div>
+</section>
 
 <section id="education">
   <h2>My Education</h2>
@@ -216,7 +224,6 @@
        class="contact-btn">
        Send Me an Email
     </a>
-
 
 
   </div>

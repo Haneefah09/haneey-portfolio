@@ -377,14 +377,51 @@ footer {
   border-radius: 20px;
   border: 3px solid white;
 }
-/* .project-card {
-  min-width: 0;
+
+.project-filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0 30px;
 }
 
-.project-card img {
-  display: block;
-  width: 100%;
-  max-height: 420px;
-  object-fit: contain;
-  margin: 15px 0;
-} */
+.project-filters button {
+  background: #f0f6ff;
+  color: #1769c2;
+  border: 1px solid #d5e7ff;
+  border-radius: 20px;
+  padding: 10px 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.project-filters button:hover {
+  background: #1769c2;
+  color: white;
+}
+
+.approach-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 30px auto;
+}
+
+.approach-card {
+  background: #f0f6ff;
+  padding: 25px;
+  border: 1px solid #d5e7ff;
+  border-radius: 12px;
+}
+
+.approach-card h3 {
+  color: #1769c2;
+  margin-bottom: 12px;
+}
+
+.approach-card p {
+  color: #52657b;
+  line-height: 1.7;
+}
